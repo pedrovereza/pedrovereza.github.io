@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+		<base target="_blank">
+
+		<title>
+			{% if page.title %}{{ page.title }} &middot; {% endif %}
+			{{ site.tagline }}
+		</title>
+
+		<link rel="stylesheet" href="/css/hyde.css">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+	</head>
+	<body>
+
+		<header class="masthead">
+		<div class="masthead-inner">
+			<a href="/index.html" target="_self"><h1>Pedro Vereza</h1></a>
+
+			<ul class="colophon-links">
+				<li><a href="/sobre.html" target="_self">Sobre</a></li>
+				<li><a href="/index.html" target="_self">Todos os Textos</a></li>
+			</ul>
+
+			<div class="colophon">
+				<ul id="contact-menu" class="colophon-links">
+					<li><a href="https://github.com/pedrovereza"><i class="fa fa-github-square fa-3x"></i></a></li>
+					<li><a href="https://facebook.com/pdrgabriel"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+					<li><a href="https://twitter.com/pdrgabriel"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+				</ul>
+				<p>pdrvereza@gmail.com</p>
+			</div>
+		</div>
+		</header>
+
+		<div class="content container">
+			{{ content }}
+		</div>
+	</body>
+</html>

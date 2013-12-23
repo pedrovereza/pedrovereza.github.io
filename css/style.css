@@ -1,0 +1,21 @@
+a {
+	text-decoration: underline;
+}
+
+#contact-menu li {
+	display: inline;
+	padding: 5px;
+}
+
+.masthead a {
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	text-decoration: none;
+ }
+ .masthead a:hover {
+	 color: #7a7a7a;
+	 text-decoration: none;
+ }
