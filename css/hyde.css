@@ -38,7 +38,7 @@ body {
 
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 1.5;
 	color: #454441;
 	background-color: #fff;
@@ -218,15 +218,15 @@ a:hover {
 -------------------------------------------------- */
 
 /* Wrapper for all posts on homepage */
-.posts {
+.post {
 	margin-left:  20px;
 	margin-right: 20px;
-}
-
-/* Single post */
-.post {
 	margin-top: 40px;
 	margin-bottom: 40px;
+	text-align: justify;
+}
+.post h1 {
+	text-align: left;
 }
 .post-date {
 	display: block;
@@ -301,16 +301,15 @@ a:hover {
 	.masthead-inner {
 		padding: 40px;
   }
-  .posts {
+  .post {
 	  margin-left: 40px;
 	  margin-right: 40px;
   }
 }
 
 @media (min-width: 990px) {
-
 	body {
-		font-size: 18px;
+		font-size: 16px;
   }
   .lead {
 	  font-size: 24px;
@@ -346,12 +345,9 @@ a:hover {
   }
 
   /* Remove mobile device padding from list of posts */
-  .posts {
+  .post {
 	  margin-left: 0;
 	  margin-right: 0;
-  }
-  /* Increase space between posts */
-  .post {
 	  margin-top: 60px;
 	  margin-bottom: 60px;
   }
