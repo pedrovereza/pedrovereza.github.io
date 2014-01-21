@@ -11,8 +11,8 @@ Lembro-me quando comecei a programar: tudo era tão mágico e parecia que tinha 
 
 O que me faltava, e que muita gente não percebe a importância, era exposição. Como eu iria estudar esses conceitos se nunca tinha sido exposto a isto? Saber que existe uma sigla TDD é diferente de parear com alguém experiente e desenvolver alguma coisa utilizando a metodologia.
 
-E é ai que o problema aparece: a maioria dos desenvolvedores experientes se restringe apenas a criticar e, em casos menos piores, refatorar o código escrito por outra pessoa. Nenhuma das duas atitudes ensina. Refazer o trabalho dos outros não beneficia ninguém, a abordagem ideal é procurar espalhar os conhecimentos para todos os membros do time. Ser o desenvolvedor *cowboy* que faz tudo sozinho é pedir para continuar fazendo tudo sozinho.
+E é aí que o problema aparece: a maioria dos desenvolvedores experientes se restringe apenas a criticar e, em casos menos piores, refatorar o código escrito por outra pessoa. Nenhuma das duas atitudes ensina. Refazer o trabalho dos outros não beneficia ninguém, a abordagem ideal é procurar espalhar os conhecimentos para todos os membros do time. Ser o desenvolvedor *cowboy* que faz tudo sozinho é pedir para continuar fazendo tudo sozinho.
 
-Experimente emprestar seu livro sobre *Clean Code*, comparitlhe os blogs que acompanha, organize pequenos dojos, procure técnicas de *pair programming* que funcionem melhor para o seu time e ambiente. Com a abordagem certa, todo programador aprende a programar.
+Experimente emprestar seu livro sobre *Clean Code*, compartilhe os blogs que acompanha, organize pequenos dojos, procure técnicas de *pair programming* que funcionem melhor para o seu time e ambiente. Com a abordagem certa, todo programador aprende a programar.
 
 [ramaciotti]:http://www.ramaciotti.com/posts/2013-12-23-programadores-nao-sabem-programar.html
