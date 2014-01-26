@@ -26,3 +26,17 @@ a {
 	 color: #7a7a7a;
 	 text-decoration: none;
  }
+
+ a.tweet-button{
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+	text-decoration: none;
+}
+
+a.tweet-button:hover{
+	color: #33CCFF;
+	text-decoration:none;
+}
