@@ -4,7 +4,7 @@ title:  "Sobre"
 ---
 ## Sobre mim
 
-Oi, meu nome é Pedro Vereza, nasci em Blumenau - SC e depois de 17 anos me interessei por programação. Estudante de Ciência da Computação, hoje moro em Porto Alegre e trabalho com pessoas brilhantes na [**Thought**Works][tw].
+Oi, meu nome é Pedro Vereza, nasci em Blumenau - SC e depois de 17 anos me interessei por programação. Estudante de Ciência da Computação na Universidade Federal do Rio Grande do Sul, hoje moro em Porto Alegre e trabalho com pessoas brilhantes na [**Thought**Works][tw].
 
 Apesar das diferentes linguagens que utilizo para desenvolver software, procuro me focar no estudo de conceitos que sejam independentes de ferramentas. Afinal, ferramentas vem e vão, mas os conceitos permanecem.
 
