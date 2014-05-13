@@ -3,3 +3,4 @@ url: http://pedrovereza.com
 markdown: redcarpet
 pygments: true
 tagline: Pedro Vereza
+exclude: [Gemfile, CNAME, Gemfile.lock]
