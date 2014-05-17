@@ -4,3 +4,4 @@ markdown: redcarpet
 highlighter: pygments
 tagline: Pedro Vereza
 exclude: [Gemfile, CNAME, Gemfile.lock]
+permalink: /:title/
