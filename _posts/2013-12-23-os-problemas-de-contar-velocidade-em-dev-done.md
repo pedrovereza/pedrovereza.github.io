@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: "pt"
 title:  "Os problemas de contar velocidade em Dev Done"
 ---
 

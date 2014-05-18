@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="{% assign lang = page.lang  %}{{lang}}">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
@@ -33,11 +33,12 @@
 
 		<header class="masthead">
 		<div class="masthead-inner">
-			<a href="/index.html" target="_self"><h1>Pedro Vereza</h1></a>
+			<a href="{{ site.nav[lang].articles.url }}" target="_self"><h1>Pedro Vereza</h1></a>
 
 			<ul class="colophon-links">
-				<li><a href="/sobre.html" target="_self">Sobre</a></li>
-				<li><a href="/index.html" target="_self">Todos os Textos</a></li>
+				<li><a href="{{ site.nav[lang].about.url }}" target="_self">{{ site.nav[lang].about.title }}</a></li>
+
+				<li><a href="{{ site.nav[lang].articles.url }}" target="_self">{{site.nav[lang].articles.title}}</a></li>
 			</ul>
 
 			<div class="colophon">
@@ -53,6 +54,9 @@
 		</header>
 
 		<div class="page-content content container">
+			{% if page.trans %}
+			<a href="{{ page.trans }}" target="_self">{{site.nav[page.lang].translation}}</a>
+			{% endif %}
 			{{ content }}
 		</div>
 	</body>

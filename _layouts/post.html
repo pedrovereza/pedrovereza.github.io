@@ -5,10 +5,14 @@ layout: default
 <div class="post">
 	<h1>{{ page.title }}</h1>
 	<span class="post-date">{{ page.date | date:"%d-%m-%Y" }}</span>
+	{% if page.trans %}
+	<a href="{{post.trans}}" target="_self">{{site[page.lang].translation}}</a>
+	{% endif %}
+
 	{{ content }}
 	<a class="tweet-button" title="Tweet" href="http://twitter.com/home/?status={{page.title}} (pedrovereza.com{{page.url}})"><i class="fa fa-twitter fa-lg"></i></a>
 
-	<h3><b>Comentários</b></h3>
+	<h3><b>{{ site.nav[page.lang].comments }}</b></h3>
 
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

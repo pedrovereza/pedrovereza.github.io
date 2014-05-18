@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: "pt"
 title: Artesão de máquinas de desenvolvimento
 ---
 

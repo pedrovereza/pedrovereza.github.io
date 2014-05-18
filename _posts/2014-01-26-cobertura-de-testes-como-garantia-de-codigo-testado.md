@@ -1,5 +1,6 @@
 ---
 layout: post
+lang: "pt"
 title: Cobertura de testes como garantia de código testado
 ---
 

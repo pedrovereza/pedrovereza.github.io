@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: "pt"
+trans: "/developers-dont-know-how-to-teach"
 title: "Programadores não sabem ensinar"
 ---
 

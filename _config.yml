@@ -5,3 +5,32 @@ highlighter: pygments
 tagline: Pedro Vereza
 exclude: [Gemfile, CNAME, Gemfile.lock]
 permalink: /:title/
+
+
+nav:
+    pt:
+        about:
+            title: "Sobre"
+            url: "/sobre.html"
+
+        translation: "Read it in english"
+
+        articles: 
+            title: "Todos os Textos"
+            url: "/index.html"
+
+        comments: "Comentários"
+
+    en:
+        about:
+            title: "About"
+            url: "/about.html"
+
+        translation: "Leia em português"
+
+        articles: 
+            title: "All Articles"
+            url: "/articles.html"
+
+        comments: "Comments"
+

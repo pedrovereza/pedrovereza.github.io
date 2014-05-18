@@ -1,6 +1,8 @@
 ---
 layout: default
-title:  "Sobre"
+title: "Sobre"
+lang: "pt"
+trans: "/about.html"
 ---
 ## Sobre mim
 

@@ -1,14 +1,14 @@
 ---
 layout: default
-lang: "pt"
-trans: "/articles.html"
+lang: "en"
+trans: "/index.html"
 ---
 
 <div class="posts">
-	<h1> Todos os textos </h1>
+	<h1> All Articles </h1>
 	<ul class="fa-ul">
 		{% for post in site.posts %}
-		{% if post.lang == "pt" %}
+		{% if post.lang == "en" %}
 		<li>
 		<a href="{{post.url}}" target="_self"><i class="fa-li fa fa-chevron-right"></i>{{post.title}}</a> {{post.date | date: "(%d-%m-%Y)"}}
 		</li>
