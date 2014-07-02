@@ -1,6 +1,7 @@
 ---
 layout: post
 lang: "pt"
+trans: /development-workspace-craftsmanship
 title: Artesão de máquinas de desenvolvimento
 ---
 
