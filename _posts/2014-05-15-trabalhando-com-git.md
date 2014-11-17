@@ -31,7 +31,7 @@ $ git add um-arquivo.txt
 $ git commit -m "Adicionando um-arquivo.txt"
 ````
 
-Esse exemplo faz o mesmo que que anterior. A diferença é que o commit **é local**, isto é: o repositório local possui o `um-arquivo.txt`, o repositório em `https://github.com/pedrovereza/exemplo.git` **não possui** `um-arquivo.txt`. Esse comportamento é exatamente o que permite se ter um histórico de mudanças locais que podem ser comparadas, revertidas ou refeitas. É possível fazer vários commits locais e enviá-los de uma vez só usando o comando `$ git push` (que na verdade se traduz, normalmente, para `$git push origin master`, mas vamos devagar).
+Esse exemplo faz o mesmo que o anterior. A diferença é que o commit **é local**, isto é: o repositório local possui o `um-arquivo.txt`, o repositório em `https://github.com/pedrovereza/exemplo.git` **não possui** `um-arquivo.txt`. Esse comportamento é exatamente o que permite se ter um histórico de mudanças locais que podem ser comparadas, revertidas ou refeitas. É possível fazer vários commits locais e enviá-los de uma vez só usando o comando `$ git push` (que na verdade se traduz, normalmente, para `$git push origin master`, mas vamos devagar).
 
 
 ##Pegando mudanças
