@@ -16,11 +16,12 @@ A typical use case for this is when app settings may change the web app behaviou
 Javascript events are the easiest way for a native app to send a message for the web app. ``UIWebView`` has a method called ``stringByEvaluatingJavaScriptFromString:(NSString *)script`` that can be used for this porpuse. An example to broadcast Angular event in Objective-C could look something like this:
 
 ```objective-c
-
+{% raw %}
 NSString* eventToBroadCast = @"$rootScope.$broadcast('someEvent', someParameter);";
-NSString* angularCode = [NSString stringWithFormat:@"var scope=angular.element(document.getElementById('main') || document.documentElement).scope(); if(scope){\%@}", eventToBroadcast];
+NSString* angularCode = [NSString stringWithFormat:@"var scope=angular.element(document.getElementById('main') || document.documentElement).scope(); if(scope){%@}", eventToBroadcast];
 
 [self.webView stringByEvaluatingJavaScriptFromString:angularCode];
+{% endraw %}
     
 ```
 
