@@ -18,7 +18,7 @@ Javascript events are the easiest way for a native app to send a message for the
 ```objective-c
 
 NSString* eventToBroadCast = @"$rootScope.$broadcast('someEvent', someParameter);";
-NSString* angularCode = [NSString stringWithFormat:@"var scope=angular.element(document.getElementById('main') || document.documentElement).scope(); if(scope){%@}", eventToBroadcast];
+NSString* angularCode = [NSString stringWithFormat:@"var scope=angular.element(document.getElementById('main') || document.documentElement).scope(); if(scope){\%@}", eventToBroadcast];
 
 [self.webView stringByEvaluatingJavaScriptFromString:angularCode];
     
