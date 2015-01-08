@@ -4,9 +4,9 @@ lang: "en"
 title: "Hybrid Mobile Apps in iOS: Making Native and Web Talk"
 ---
 
-Deciding which techonology to use when building mobile app is often a binary choice between native and web. Both having pros and cons, which sometimes leads to combination: Hybrid apps. In a nuttshell, hybrid apps have a native layer and a web based layer (web apps always need at least a ``UIWebView`` to run on, hybrid apps bring more than just the ``UIWebView`` part).
+Deciding which technology to use when building mobile app is often a binary choice between native and web. Both having pros and cons, which sometimes leads to combination: Hybrid apps. In a nutshell, hybrid apps have a native layer and a web based layer (web apps always need at least a ``UIWebView`` to run on, hybrid apps bring more than just the ``UIWebView`` part).
 
-Having responsibilites sepparated across these layers creates the need to share information between them. The web app needs to trigger something on the native code and vice versa.
+Having responsibilities separated across these layers creates the need to share information between them. The web app needs to trigger something on the native code and vice versa.
 
 #Native to Web
 A typical use case for this is when app settings may change the web app behaviour. These need to be read when the application loads (or whenever the settings change) and then be sent to the web app.
@@ -25,13 +25,13 @@ NSString* angularCode = [NSString stringWithFormat:@"var scope=angular.element(d
     
 ```
 
-The event is then handled normally by the Angular application. In fact, the web app doesn't even know about the existance of a native code behind it. So how would the communication flow the other way around?
+The event is then handled normally by the Angular application. In fact, the web app doesn't even know about the existence of a native code behind it. So how would the communication flow the other way around?
 
 #Web to Native
 
-Sending a message from native to web is fairly easy, the tricky part is the opposite direction: the web app is not aware that there is a native layer behind it. To all efects, the web app is simply running on a browser: be it Chrome on a PC or a ``UIWebView`` on an iOS app.
+Sending a message from native to web is fairly easy, the tricky part is the opposite direction: the web app is not aware that there is a native layer behind it. To all effects, the web app is simply running on a browser: be it Chrome on a PC or a ``UIWebView`` on an iOS app.
 
-But the native app is aware of the web app existance and **it can intercept all the requests made by the web app**. That's how the communication works: the web app makes a request (containing the message) and the native app intercepts and responds to it.
+But the native app is aware of the web app existence and **it can intercept all the requests made by the web app**. That's how the communication works: the web app makes a request (containing the message) and the native app intercepts and responds to it.
 
 ##NSURLProtocol
 
@@ -88,12 +88,12 @@ More detailed information about ``NSURLProtocol`` can be found in [the official 
 
 The implementation above has a potential problem: it's not asynchronous, which means the ``UIWebView`` is frozen until the response comes back. It's important to understand that **it's not your web app the freezes, it's the ``UIWebView`` itself.** In some scenarios this can be a big problem, specially if the operation performed on the native app is likely to take some time.
 
-Fortunately, knowing how to switch messages between native and web is enough to perfom the task asynchronously. The basic idea is to intercept the request, fire some threads in the background, respond with HTTP code ``202 (Accepted)`` and, when the background thread is done, send the results using javascript events.
+Fortunately, knowing how to switch messages between native and web is enough to perform the task asynchronously. The basic idea is to intercept the request, fire some threads in the background, respond with HTTP code ``202 (Accepted)`` and, when the background thread is done, send the results using javascript events.
 
-In this scenario, the ``NSURLProtocol`` is responsible for returning a response indicating that the request was accepted and starting the thread that will do the actual work. It is this thread responsibilty to then execute the javascript event containing the results or any error that might have happened during the execution.
+In this scenario, the ``NSURLProtocol`` is responsible for returning a response indicating that the request was accepted and starting the thread that will do the actual work. It is this thread responsibility to then execute the javascript event containing the results or any error that might have happened during the execution.
 
 #Wrapping up
 
-Hybrid mobile apps bring the best of both worlds, but it also comes with new problems to be solved. Switching message between completely different layers is fundamental, specially when the native side is not only a ``UIWebView`` wraping the web app. Knowing how to make these two layers communicate properly is essential to create robust hybrid mobile applications.
+Hybrid mobile apps bring the best of both worlds, but it also comes with new problems to be solved. Switching message between completely different layers is fundamental, specially when the native side is not only a ``UIWebView`` wrapping the web app. Knowing how to make these two layers communicate properly is essential to create robust hybrid mobile applications.
 
 [nsurlprotocol]: https://developer.apple.com/library/ios/documentation/Cocoa/Reference/Foundation/Classes/NSURLProtocol_Class/index.html
